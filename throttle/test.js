@@ -58,7 +58,7 @@ describe('throttle', function() {
     setTimeout(function() {
       clearInterval(interval);
 
-      assert.deepEqual(calledTimes, [0, 11, 22, 33, 44, 55]);
+      assert.deepEqual(calledTimes, [0, 10, 21, 32, 43, 54]);
 
       done();
     }, 59);
